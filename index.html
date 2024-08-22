@@ -10,6 +10,11 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
       rel="stylesheet"
     />
+    <!-- Font Awesome CDN -->
+    <script
+      src="https://kit.fontawesome.com/48aab1c0da.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- DaisyUI CDN -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
@@ -29,7 +34,89 @@
   </head>
   <body class="font-manrope">
     <!-- header section -->
-    <header></header>
+    <header class="container mx-auto mt-14">
+      <!-- navbar section -->
+      <nav>
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div
+              class="bg-[#ABEF5F] w-8 h-8 rounded-full p-3 flex items-center justify-center"
+            >
+              <i
+                class="fa-solid fa-arrow-right fa-rotate-by fa-lg"
+                style="--fa-rotate-angle: -45deg"
+              ></i>
+            </div>
+            <div>
+              <a
+                class="btn btn-ghost lg:text-[2rem] text-[1.75rem] font-extrabold"
+                >Rinterio</a
+              >
+            </div>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li class="font-extrabold"><a>Home</a></li>
+              <li><a>Services</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>Blogs</a></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end flex gap-4">
+            <div
+              class="bg-red-50 w-12 h-12 flex justify-center items-center rounded-full"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div
+              class="bg-red-50 w-12 h-12 flex justify-center items-center rounded-full"
+            >
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <a
+              class="btn text-black text-xl font-extrabold bg-[#ABEF5F] rounded-full px-5 lg:py-2 py-1 md:flex hidden h-auto"
+              >Book Consult
+              <div
+                class="bg-black w-8 h-8 rounded-full p-3 flex items-center justify-center"
+              >
+                <i
+                  class="fa-solid fa-arrow-right fa-rotate-by fa-sm"
+                  style="color: #ffffff; --fa-rotate-angle: -45deg"
+                ></i></div
+            ></a>
+          </div>
+          <div class="dropdown dropdown-end">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 text-right p-2 shadow"
+            >
+              <li class="font-extrabold"><a>Home</a></li>
+              <li><a>Services</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>Blogs</a></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
     <!-- main section -->
     <main></main>
     <!-- footer section -->
