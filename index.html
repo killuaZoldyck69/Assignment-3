@@ -22,6 +22,20 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind Customizing CDN -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              title: "#212121",
+              subtitle: "#494949",
+            },
+          },
+        },
+      };
+    </script>
     <title>Assignment 3</title>
     <style>
       .font-manrope {
@@ -37,7 +51,7 @@
     <header class="container mx-auto lg:mt-14 md:mt-10 mt-8">
       <!-- navbar section -->
       <nav>
-        <div class="navbar bg-base-100">
+        <div class="navbar">
           <div class="navbar-start">
             <div
               class="bg-[#ABEF5F] w-8 h-8 rounded-full p-3 flex items-center justify-center"
@@ -65,12 +79,12 @@
           </div>
           <div class="navbar-end flex gap-4">
             <div
-              class="hidden bg-red-50 w-12 h-12 md:flex justify-center items-center rounded-full"
+              class="hidden border-2 border-[#E9E9E9] bg-white w-12 h-12 md:flex justify-center items-center rounded-full"
             >
               <i class="fa-solid fa-magnifying-glass"></i>
             </div>
             <div
-              class="hidden bg-red-50 w-12 h-12 md:flex justify-center items-center rounded-full"
+              class="hidden border-2 border-[#E9E9E9] bg-white w-12 h-12 md:flex justify-center items-center rounded-full"
             >
               <i class="fa-solid fa-cart-shopping"></i>
             </div>
@@ -86,22 +100,24 @@
                 ></i></div
             ></a>
           </div>
-          <div
-            class="dropdown dropdown-end bg-red-50 rounded-full w-12 h-12 ml-3"
-          >
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+          <div class="dropdown dropdown-end">
+            <div
+              tabindex="0"
+              role="button"
+              class="btn btn-ghost lg:hidden border-2 border-[#E9E9E9] bg-white rounded-full w-12 h-12 ml-3"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
                 fill="none"
                 viewBox="0 0 24 24"
+                stroke-width="1.5"
                 stroke="currentColor"
+                class="size-6"
               >
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
                 />
               </svg>
             </div>
@@ -118,6 +134,42 @@
           </div>
         </div>
       </nav>
+      <!-- banner section -->
+      <section class="md:mt-12 mt-8">
+        <div class="hero">
+          <div class="hero-content p-0 flex-col">
+            <img src="assets/banner.png" class="lg:w-max md:w-3/5 w-3/4" />
+            <div class="space-y-6">
+              <h1
+                class="lg:text-7xl md:text-4xl text-[1.75rem] px-10 font-extrabold text-title text-center"
+              >
+                A barn house of this design has a striking appearance
+              </h1>
+              <p
+                class="text-subtitle text-center w-3/4 mx-auto md:text-base text-[14px]"
+              >
+                The barn house captivates with its blend of rustic charm and
+                modern sophistication, featuring weathered wood, sleek metal
+                accents, and large windows that flood the space with natural
+                light.
+              </p>
+              <button
+                class="mx-auto btn text-black text-xl font-bold bg-[#ABEF5F70] rounded-full px-5 lg:py-2 py-1 flex h-auto"
+              >
+                View Details
+                <div
+                  class="bg-[#ABEF5F] w-8 h-8 rounded-full p-3 flex items-center justify-center"
+                >
+                  <i
+                    class="fa-solid fa-arrow-right fa-rotate-by fa-sm"
+                    style="color: #000000; --fa-rotate-angle: -45deg"
+                  ></i>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
     </header>
     <!-- main section -->
     <main></main>
